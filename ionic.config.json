@@ -1,0 +1,7 @@
+{
+  "name": "phrb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

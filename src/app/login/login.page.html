@@ -1,0 +1,52 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    
+  </ion-row>
+  <ion-row >
+    <ion-col>
+
+    </ion-col>
+    <ion-col>
+      <center><h1 class = "padding">PHRB login</h1></center>
+      <form>    
+        <ion-item lines="full">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="text" #email required></ion-input>
+        </ion-item> 
+    
+        <ion-item lines="full">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" #password required></ion-input>
+        </ion-item>
+    
+        <ion-row>
+          <ion-col> 
+          <ion-button type="submit" (click)="logIn(email, password)" expand="block">Login</ion-button>
+          </ion-col>
+          <ion-col> 
+            <ion-button expand ="block" [routerLink]="['/registration']">Register</ion-button>
+          </ion-col>
+          </ion-row>
+          </form>
+        
+    </ion-col>
+    <ion-col>
+
+    </ion-col>
+  
+       
+  </ion-row>
+    
+      
+    
+  
+ 
+
+  
+</ion-content>
+
+

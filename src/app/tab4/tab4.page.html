@@ -1,0 +1,41 @@
+<!--
+* Ionic 5 Google Vision App (https://store.enappd.com/product/google-vision-app-starter-ionic//)
+*
+* Copyright © 2019-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+
+-->
+
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>
+      OCR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding-top ion-padding-bottom">
+  <ion-item>
+    <h5 class="headingSection"> Select any one feature to be applied:</h5>
+  </ion-item>
+  <ion-radio-group (ionChange)="radioGroupChange($event)" [value]="selectedfeature">
+    <ion-item>
+      
+      <ion-label>Text Detection</ion-label>
+      <ion-radio value="TEXT_DETECTION"></ion-radio>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Document Text Detection</ion-label>
+      <ion-radio value="DOCUMENT_TEXT_DETECTION"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="presentAlertConfirm()">
+      <ion-icon name="camera">
+      </ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<!--  -lc -->
